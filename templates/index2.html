@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="/static/css/style2.less" type="text/css" rel="stylesheet/less" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/animate.css">
+</head>
+
+
+
+<body class="close" >
+    <div class="cover" class="closed">
+         <!-- <nav>
+            <div><a href="">DAVID ADEYEMI</a></div>
+            <ul>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav> -->
+
+        
+        <div id="cover_intro">
+            <div>
+                <img src="../static/images/kadhack.jpg" alt="">
+            </div>
+            <div id="name_post">
+                <h2> <span class="">DAVID ADEYEMI</span> </h2>
+                <div> <span class="">FULL STACK WEB DEVELOPER </span> </div>
+            </div>
+
+            <div class="started">
+                <a href="" class="glow" id="scrollbtn">GET STARTED </a>
+            </div>
+        </div>
+    
+    </div>
+        
+
+
+    <div id="mainbody">
+        
+        <div id="intro">
+        <section>            
+            <div class="header">ABOUT</div>
+            <div class="content">
+                I'm a Nigerian student studying Cyber Security in the Federal University of Technology Akure(FUTA). I have a passion for building simple, functional and responsive web applications.I also enjoy spending my time playing chess or gaming.I'd totally love to hear from you. So hit me up so we can start talking!
+            </div>            
+
+
+            <div id="int"></div>
+        </section>
+    
+        </div>
+
+            <div class="skills">
+                <div class="skillgrid">
+                    <div class="sub">   
+                        <h4><div class="stack">FRONT END WEB DEVELOPER</div></h4>
+                        <div class="content">
+                            I love to code cool looking interfaces from scratch. 
+                            I make use of design principles to bring them to life on the browser
+                        </div>
+
+                        <div>
+                            <h5>LANGUAGES I SPEAK</h5>
+                            <ul class="stacklist">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>JQUERY</li>
+                                <li>REACTJS</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="sub">
+                        <h4> <div class="stack">BACK END WEB DEVELOPER</div> </h4>
+                        <div class="content">
+                            I make use of back end technologies to provide database support and other back end utilities for web interfaces
+                        </div>
+                        <div>
+                            <h5>LANGUAGES I SPEAK</h5>
+                            <ul class="stacklist">
+                                <li>PYTHON</li>
+                                <li>DJANGO</li>
+                                <li>PHP</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+    </div>
+
+    <section class="services">
+            <div class="header">SERVICES</div>
+
+            <ul class="service_grid">
+                <li>
+                    <div class="service_caption">
+                        <img src="../static/images/icons/mobile-and-pc-linked.png" alt="">    
+                    </div>
+
+                    <div>RESPONSIVE WEB DEVELOPMENT</div>
+                </li>
+                <li>
+                    <div class="service_caption">
+                        <img src="../static/images/icons/computer-user.png" alt="">    
+                    </div>
+
+                    <div>USER FOCUSED WEB DESIGN</div>
+                </li>
+                <li>
+                    <div class="service_caption">
+                        <img src="../static/images/icons/cute-rocket-launching.png" alt="">    
+                    </div>
+
+                    <div>WEB HOSTING/DEPLOYMENT</div>
+                </li>
+                <li>
+                    <div class="service_caption">
+                        <img src="../static/images/icons/maintain.png" alt="">    
+                    </div>
+
+                    <div>WEB MAINTAINENCE & MANAGEMENT</div>
+                </li>
+
+            </ul>
+
+    </section>
+
+
+    <section class="contact">
+        <div class="header">CONTACT</div>
+
+        <form method="POST">
+            {% csrf_token %}
+            {% for i in form  %}
+            
+                <div>
+                    {{i}}
+                    <div class="page"> </div>
+                </div>
+             
+            {% endfor %}
+
+            {% comment %} 
+            <div>
+                <input type="text" name="email" id="">
+            </div>
+        
+            <div>
+                <select name="" id="">
+                    <option value="choose_project">Choose Project Type</option>
+                    <option value="">Single Page</option>
+                    <option value="">Multiple Pages</option>
+                </select>
+            </div>
+
+            <div>
+                <textarea name="message" id="" cols="30" maxlength="1000" rows="10">Message</textarea>
+            </div>
+
+            <div class="btn">
+                <div>a</div>
+                <button type="submit">SUBMIT</button>
+                <div> <span class="tag">span</a> </div>
+            </div> {% endcomment %}
+            <div class="sub_btn">
+                <input type="submit" value="SUBMIT">
+            </div>
+
+        </form>
+
+
+    </section>
+
+
+    <footer>
+
+        <div>
+            <ul>
+                <li><i class="fa fa-twitter"></i></li>
+                <li> <i class="fa fa-github"></i> </li>
+                <li> <i class="fa fa-linkedin"></i> </li>
+                
+            
+            </ul>
+
+            <div>
+                <a href="response.html">Powered by Django and Javascript</a>
+                <div>COPYRIGHT 2020</div>
+            </div>
+        </div>
+
+
+
+    </footer>
+</body>
+<script src="/static/js/jquery-3.5.0.js"></script>
+<script src="/static/js/less.min.js" type="text/javascript"></script>
+<script src="/static/js/script.js"></script>
+
+</html>
